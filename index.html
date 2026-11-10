@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="InfraPilot — enterprise AI adoption for infrastructure and ops. Remote freelance for AIOps, CMDB, and backend work." />
+  <title>InfraPilot · Enterprise AI for Infrastructure &amp; Ops</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#top"><span class="logo-mark">IP</span> <span data-i18n="logo">InfraPilot</span></a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#services" data-i18n="nav_services">服务</a>
+        <a href="#skills" data-i18n="nav_skills">技能</a>
+        <a href="#projects" data-i18n="nav_projects">项目</a>
+        <a href="#contact" data-i18n="nav_contact">联系</a>
+      </nav>
+      <div class="header-actions">
+        <button type="button" class="lang-toggle" id="langToggle" aria-label="Switch language">EN</button>
+        <a class="btn btn-sm btn-primary" href="#contact" data-i18n="nav_hire">接单咨询</a>
+      </div>
+      <button type="button" class="menu-toggle" id="menuToggle" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-label="InfraPilot hero">
+      <div class="hero-bg" aria-hidden="true">
+        <picture>
+          <source srcset="assets/hero.webp" type="image/webp" />
+          <img src="assets/hero.jpg" alt="" width="1400" height="787" decoding="async" fetchpriority="high" />
+        </picture>
+        <div class="hero-scrim"></div>
+      </div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="hero_eyebrow">企业 AI 落地 · 基础设施 / 运维 · 远程</p>
+          <p class="brand-line" data-i18n="hero_brand">InfraPilot</p>
+          <h1>
+            <span class="display-name">yubolin</span>
+            <span class="subtitle" data-i18n="hero_title">帮助企业把 AI 用到基础设施与运维上</span>
+          </h1>
+          <p class="lead" data-i18n="hero_lead">
+            InfraPilot 面向企业基础设施与运维场景的 AI 落地：AIOps、CMDB、云原生与 LLM 运维相关能力。
+            擅长写代码与修 Bug、测试排障、安装配置部署，以及需求分析与产品设计。承接远程付费项目。
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#contact" data-i18n="hero_cta_primary">联系接单</a>
+            <a class="btn btn-ghost" href="#projects" data-i18n="hero_cta_secondary">查看项目</a>
+            <a class="btn btn-ghost" href="https://github.com/yubolin" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+          <ul class="hero-tags" aria-label="Focus areas">
+            <li>Enterprise AI</li>
+            <li>AIOps</li>
+            <li>CMDB</li>
+            <li>TokenOps</li>
+            <li>Python / FastAPI</li>
+            <li>TypeScript</li>
+          </ul>
+          <aside class="hero-card" aria-label="Quick facts">
+            <h2 data-i18n="hero_card_title">可远程交付</h2>
+            <ul>
+              <li data-i18n="hero_card_1">Bug 修复与功能开发</li>
+              <li data-i18n="hero_card_2">测试、排障与性能优化</li>
+              <li data-i18n="hero_card_3">安装、配置与部署上线</li>
+              <li data-i18n="hero_card_4">需求分析与产品设计协助</li>
+            </ul>
+            <p class="hero-card-note" data-i18n="hero_card_note">时区：Asia/Shanghai (UTC+8)，可配合海外团队 overlapping hours。</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Services</p>
+          <h2 data-i18n="services_title">我能帮你做什么</h2>
+          <p class="section-desc" data-i18n="services_desc">按远程单交付，可短周期修 Bug，也可参与完整功能与企业 AI 运维平台建设。</p>
+        </header>
+        <div class="card-grid four">
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">🛠️</div>
+            <h3 data-i18n="svc1_title">写代码 / 修 Bug</h3>
+            <p data-i18n="svc1_desc">后端与前端功能开发、缺陷定位与修复，熟悉 Python、JS/TS、Java、PHP。</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">🧪</div>
+            <h3 data-i18n="svc2_title">测试与排障</h3>
+            <p data-i18n="svc2_desc">软件测试、线上问题排查、日志与监控分析，把不稳定系统稳住。</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">🚀</div>
+            <h3 data-i18n="svc3_title">安装配置部署</h3>
+            <p data-i18n="svc3_desc">软件安装、环境配置、Docker / Compose 部署与上线实施。</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">📐</div>
+            <h3 data-i18n="svc4_title">需求与产品设计</h3>
+            <p data-i18n="svc4_desc">需求分析、方案梳理与产品设计协助，把模糊需求落成可执行任务。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Skills</p>
+          <h2 data-i18n="skills_title">技能栈</h2>
+        </header>
+        <div class="skills-grid">
+          <div class="skill-block">
+            <h3 data-i18n="skills_lang">编程语言</h3>
+            <ul class="pill-list">
+              <li>Python</li>
+              <li>JavaScript / TypeScript</li>
+              <li>Java</li>
+              <li>PHP</li>
+            </ul>
+          </div>
+          <div class="skill-block">
+            <h3 data-i18n="skills_stack">从项目中用到的技术</h3>
+            <ul class="pill-list">
+              <li>FastAPI</li>
+              <li>Next.js / React</li>
+              <li>Go (Agent)</li>
+              <li>PostgreSQL</li>
+              <li>Redis</li>
+              <li>InfluxDB</li>
+              <li>Docker / Compose</li>
+              <li>Nginx</li>
+              <li>Vite</li>
+              <li>Ant Design</li>
+              <li>SQLAlchemy</li>
+              <li>JWT / RBAC</li>
+            </ul>
+          </div>
+          <div class="skill-block">
+            <h3 data-i18n="skills_domain">领域方向</h3>
+            <ul class="pill-list">
+              <li>Enterprise AI 落地</li>
+              <li>AIOps / 智能运维</li>
+              <li>CMDB / 多云资产</li>
+              <li>K8s / 云原生监控</li>
+              <li>LLM 推理运维</li>
+              <li>TokenOps</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Projects</p>
+          <h2 data-i18n="projects_title">精选项目</h2>
+          <p class="section-desc" data-i18n="projects_desc">
+            以下 live 项目描述均来自仓库 README，未添加仓库中不存在的指标或功能。仓库目前为私有，需授权后查看源码。新项目请追加到 js/projects.js。
+          </p>
+        </header>
+        <!-- Rendered from window.INFRA_PILOT_PROJECTS in js/projects.js -->
+        <div class="project-grid" id="projectsGrid"></div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-alt">
+      <div class="container contact-box">
+        <header class="section-head">
+          <p class="eyebrow">Contact</p>
+          <h2 data-i18n="contact_title">有远程单？直接联系我</h2>
+          <p class="section-desc" data-i18n="contact_desc">说清需求、时间与预算即可。私有仓库如需代码审阅，可单独开通权限。</p>
+        </header>
+        <div class="contact-cards">
+          <a class="contact-card" href="https://github.com/yubolin" target="_blank" rel="noopener noreferrer">
+            <span class="contact-label">GitHub</span>
+            <strong>github.com/yubolin</strong>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> InfraPilot · yubolin</p>
+      <p class="muted" data-i18n="footer_note">InfraPilot · 企业 AI 落地 · 基础设施与运维</p>
+    </div>
+  </footer>
+
+  <script src="js/projects.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

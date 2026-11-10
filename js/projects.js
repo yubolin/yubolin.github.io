@@ -1,7 +1,8 @@
 /**
  * Project cards — add new entries here. The page renders this array.
  * Fields: id, status ('live'|'coming'), title, titleEn, tagline, taglineEn,
- * body, bodyEn, badges, tags, github (optional), version (optional)
+ * body, bodyEn, badges, tags, screenshots (optional), version (optional).
+ * Do not publish private GitHub repo URLs on this site.
  */
 window.INFRA_PILOT_PROJECTS = [
   {
@@ -27,7 +28,23 @@ window.INFRA_PILOT_PROJECTS = [
       "Dify / LiteLLM / vLLM",
       "Docker Compose"
     ],
-    github: "https://github.com/yubolin/ai-ops"
+    screenshots: [
+      {
+        src: "assets/projects/ai-ops/monitor.webp",
+        alt: "AI OPS 主机监控看板",
+        altEn: "AI OPS host monitoring dashboard"
+      },
+      {
+        src: "assets/projects/ai-ops/accelerator.webp",
+        alt: "AI OPS GPU 算力监控",
+        altEn: "AI OPS GPU accelerator monitoring"
+      },
+      {
+        src: "assets/projects/ai-ops/smartops.webp",
+        alt: "AI OPS SmartOps 根因分析",
+        altEn: "AI OPS SmartOps root-cause analysis"
+      }
+    ]
   },
   {
     id: "cmdb",
@@ -51,8 +68,24 @@ window.INFRA_PILOT_PROJECTS = [
       "Aliyun / Tencent / AWS / Azure SDK",
       "Docker Compose / Nginx"
     ],
-    github: "https://github.com/yubolin/cmdb",
-    version: "0.9.0"
+    version: "0.9.0",
+    screenshots: [
+      {
+        src: "assets/projects/cmdb/dashboard.webp",
+        alt: "CloudNexus CMDB 仪表盘",
+        altEn: "CloudNexus CMDB dashboard"
+      },
+      {
+        src: "assets/projects/cmdb/assets.webp",
+        alt: "CloudNexus 多云资产列表",
+        altEn: "CloudNexus multi-cloud asset list"
+      },
+      {
+        src: "assets/projects/cmdb/topology.webp",
+        alt: "CloudNexus 资产拓扑图谱",
+        altEn: "CloudNexus asset topology graph"
+      }
+    ]
   },
   {
     id: "tokenops",
@@ -76,6 +109,22 @@ window.INFRA_PILOT_PROJECTS = [
       "JWT / OAuth2 / RBAC",
       "Docker Compose / Nginx"
     ],
-    github: "https://github.com/yubolin/tokenops"
+    screenshots: [
+      {
+        src: "assets/projects/tokenops/dashboard.webp",
+        alt: "TokenOps 用量仪表盘",
+        altEn: "TokenOps usage dashboard"
+      },
+      {
+        src: "assets/projects/tokenops/keys.webp",
+        alt: "TokenOps 虚拟 Key 管理",
+        altEn: "TokenOps virtual key management"
+      },
+      {
+        src: "assets/projects/tokenops/budgets.webp",
+        alt: "TokenOps 多层级预算",
+        altEn: "TokenOps layered budgets"
+      }
+    ]
   }
 ];
